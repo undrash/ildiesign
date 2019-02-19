@@ -1,8 +1,8 @@
 /*Content*/
-    /*1 Main website */
-    /*2 Home page*/
-    /*3 Daily UI*/
-
+/*1 Main website */
+/*2 Home page*/
+/*3 Daily UI*/
+/*4 About Me*/
 
 
 
@@ -14,7 +14,24 @@
     color: #242E4C;
 }
 
-nav {
+::selection {
+    background: #000000;
+    color: white;
+}
+::-moz-selection {
+    background: #000000;
+    color: white;
+}
+
+.active-btn {
+    opacity: 1;
+}
+
+.inactive-btn {
+    opacity: 0.5;
+}
+
+#main-nav {
     width: 100%;
     text-align: center;
     background-color: white;
@@ -25,6 +42,34 @@ nav {
     position: relative;
     z-index: 2;
 }
+
+.main-title {
+    font-size: 24px;
+}
+
+.subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.basic-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.secondary-description {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 36px
+}
+
+.bold {
+    font-weight: 700;
+}
+
 
 .menu-item-container {
     display: inline-block;
@@ -38,7 +83,7 @@ nav {
 
 .menu-item {
     line-height: 76px;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
     margin: 0 20px 0 20px;
     transition: opacity 0.2s ease-in-out;
     font-weight: 700;
@@ -48,11 +93,6 @@ nav {
 .menu-item:hover {
     opacity: 1;
 }
-
-.menu-item:visited {
-    opacity: 1;
-}
-
 
 .email-button {
     width: 40px;
@@ -66,10 +106,116 @@ nav {
     cursor: pointer;
 }
 
+/*FOOTER ----------------------------------------------------------------------------*/
+
 footer {
-    height: 50px;
-    background-color: #EEEEEE;
+    height: auto;
+    background-color: #ffffff;
+    clear: both;
+    padding: 0 20px 0 30px;
+    line-height: 50px;
+    position: relative;
 }
+
+.footer-nav {
+    display: inline-block;
+}
+
+.footer-menu-item {
+    font-size: 12px;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+    font-weight: 700;
+}
+
+.footer-menu-item:hover {
+    opacity: 1;
+}
+
+.copyright {
+    font-size: 12px;
+    line-height: 50px;
+    opacity: 0.5;
+    font-weight: 700;
+    display: inline-block;
+    position: absolute;
+    left: 45%;
+    bottom: -2px;
+}
+
+.social-media-container {
+    display: inline-block;
+    float: right;
+}
+
+.social-button {
+    width: 35px;
+    height: 35px;
+    background: url(../public/images/social-icons.svg) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#twitter-btn {
+    background-position: 10px 9px;
+}
+
+#twitter-btn:hover {
+    background-position: 10px -33px;
+}
+
+#behance-social-btn {
+    background-position: -42px 9px;
+}
+
+#behance-social-btn:hover {
+    background-position: -42px -33px;
+}
+
+#linked-in-btn {
+    background-position: -95px 7px;
+}
+
+#linked-in-btn:hover {
+    background-position: -95px -35px;
+}
+
+#github-btn {
+    background-position: -147px 9px;
+}
+
+#github-btn:hover {
+
+    background-position: -147px -33px;
+}
+
+#dribbble-btn {
+    background-position: -198px 9px;
+}
+
+#dribbble-btn:hover {
+    background-position: -198px -33px;
+}
+
+#facebook-btn {
+    background-position: -246px 9px;
+}
+
+#facebook-btn:hover {
+    background-position: -246px -33px;
+}
+
+#instagram-btn {
+    background-position: -294px 9px;
+}
+
+#instagram-btn:hover {
+    background-position: -294px -33px;
+}
+
 
 /*2 HOME PAGE*/
 
@@ -80,7 +226,7 @@ footer {
 
 }
 
-/*3 DAILY UI-----------------------------------------------------------------------------*/
+/*3 DAILY UI -----------------------------------------------------------------------------*/
 
 #daily-ui-container {
     width: 100%;
@@ -92,7 +238,6 @@ footer {
 }
 
 .content-container {
-    /*background-color: #e2f9e7;*/
     max-width: 1070px;
     text-align: center;
     margin: auto;
@@ -106,6 +251,15 @@ footer {
     right: 30px;
     top: 0;
     border-radius: 0 0 5px 5px;
+}
+
+.daily-description {
+    max-width: 600px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 auto 30px auto;
+    padding: 0 30px;
 }
 
 .count-title {
@@ -125,21 +279,9 @@ footer {
     padding-bottom: 60px;
 }
 
-.main-title {
-    font-size: 24px;
-}
 
 .daily-ui-title {
     margin-bottom: 25px;
-}
-
-.daily-description {
-    max-width: 600px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 25px;
-    margin: 0 auto 30px auto;
-    padding: 0 30px;
 }
 
 .blue-button {
@@ -171,9 +313,327 @@ footer {
     margin: 10px;
 }
 
+/*ABOUT ME ------------------------------------------------------------------------------------------*/
+
+
+.about-me-container {
+    padding-top: 60px;
+    width: 100%;
+    background-color: #F9F9F9;
+    height: auto;
+}
+
+.skills-container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 35px 75px;
+}
+
+.ildiesign-intro {
+    max-width: 1040px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+#ildiesign-intro {
+    margin-bottom: 60px;
+    padding: 0 75px;
+}
+
+.profile-picture {
+    display: inline-block;
+    float: left;
+    width: 210px;
+}
+
+#intro-description {
+    padding-left: 50px;
+    float: left;
+    box-sizing: border-box;
+    width: calc(100% - 260px);
+}
+
+#intro-main-title {
+    margin-bottom: 10px;
+}
+
+#intro-subtitle {
+    margin-bottom: 30px;
+}
+
+.top-skillset {
+    display: block;
+    /*overflow: hidden;*/
+    margin-bottom: 30px;
+    height: auto;
+    float: left;
+}
+
+.bottom-skillset {
+    clear: both;
+    overflow: hidden;
+}
+
+.skills-left-wrapper {
+    float: left;
+    width: 40%;
+    margin-right: 20px;
+}
+
+.skills-right-wrapper {
+    float: left;
+    width: 55%;
+}
+
+.skills-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.indent {
+    margin-left: 16px;
+}
+
+#competencies-list {
+    margin-bottom: 30px;
+}
+
+.competencies-item {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.skills-container {
+    clear: both;
+}
+
+.softwares-list {
+    margin-bottom: 30px
+}
+
+.soft-type {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: #EEEEEE solid 1px;
+    background: url(../public/images/software-spritesheet.svg) no-repeat;
+    display: inline-block;
+    margin: 0 15px 15px 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.soft-type:hover, .soft-type-large:hover {
+    /*background: #FFFFFF;*/
+    /*border: 1px solid #EEEEEE;*/
+    box-shadow: 0 2px 15px 0 rgba(36,46,76,0.15);
+}
+
+.skillset-container {
+    position: relative;
+}
+
+.soft-type-large {
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+}
+
+.sketch-tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    /*visibility: hidden;*/
+    position: absolute;
+    background: #000000;
+    border-radius: .4em;
+    width: 240px;
+    /*height: 170px;*/
+    padding: 35px 30px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    line-height: 23px;
+    z-index: 99;
+}
+
+.tooltip:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #000000;
+    border-top: 0;
+    margin-left: -20px;
+    margin-top: -8px;
+}
+
+#sketch-tooltip {
+    left: -119px;
+    top: 55px;
+}
+
+#sketch:hover .tooltip {
+    visibility: visible;
+}
+
+#technologies-list {
+    float: left;
+    width: 55%;
+}
+
+#sketch {
+    background-position: 8px 12px;
+}
+
+#invision {
+    background-position: -31px 12px;
+}
+
+#principle {
+    background-position: -65px 12px;
+}
+
+#photoshop {
+    background-position: -101px 12px;
+}
+
+#realtimeboard {
+    background-position: -138px 12px;
+}
+
+#illustrator {
+    background-position: -175px 11px;
+}
+
+#figma {
+    background-position: -208px 11px;
+}
+
+#xd {
+    background-position: -242px 11px;
+}
+
+#html {
+    background-position: 23px -40px;
+}
+
+#css {
+    background-position: -36px -40px;
+}
+
+#saas {
+    background-position: -101px -40px;
+}
+
+#javascript {
+    background-position: -165px -40px;
+}
+
+#bootstrap {
+    background-position: -227px -40px;
+}
+
+.work-experience {
+    padding-left: 6px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.border-left {
+    border-left: 2px solid #EEEEEE;
+
+}
+
+.time-interval {
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+
+.bullet {
+    margin-left: -6px;
+    margin-right: 10px;
+}
+
+#experience-description {
+    position: absolute;
+    top: 55px;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding-left: 15px;
+    line-height: 21px;
+}
+
+.experience-item {
+    position: relative;
+}
+
+.experience-item:not(:last-child) {
+    padding-bottom: 30px;
+    border-left: 2px solid #eeeeee;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    top: 0;
+    left: -6px;
+}
+
+#testimonials-title {
+    margin-bottom: 40px;
+}
+
+#testimonials {
+    padding: 60px 75px 85px 75px;
+}
+
+.testimonial-card {
+    width: 30%;
+    min-height: 345px;
+    background-color: white;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.testimonial-content {
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.end-quote {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.middle-card {
+    margin: 0 4%;
+}
+
 
 @media only screen and (max-width: 450px) {
-    nav {
+    #main-nav {
         padding-top: 30px;
         padding-bottom: 20px;
     }
@@ -189,21 +649,21 @@ footer {
     }
 }
 
-
 @media only screen and (max-width: 510px) {
     #email-btn-container {
         position: fixed;
-        bottom: 30px;
-        right: 30px;
+        bottom: 20px;
+        right: 20px;
         margin: 0;
         z-index: 1;
     }
 
     .email-button {
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         border-radius: 40px;
-        box-shadow: 0px 2px 10px 0px rgba(36,46,76,0.1);
+        box-shadow: 0 2px 10px 0 rgba(36,46,76,0.1);
+        background-size: 22px;
     }
 
     .daily-ui-count {
@@ -215,6 +675,15 @@ footer {
     .daily-ui-header {
         padding-top: 130px;
     }
+
+    .guide-thumb {
+        display: none;
+    }
+
+    .white-overlay {
+        height: 250px;
+    }
+
 }
 
 @media only screen and (max-width: 704px){
@@ -223,8 +692,199 @@ footer {
     }
 }
 
+@media only screen and (max-width: 900px){
+    #ildiesign-intro {
+        padding: 0 30px;
+    }
+
+    .skills-container {
+        padding: 35px 30px;
+    }
+
+}
+
+
 @media only screen and (max-width: 1058px){
     .notifications-thumb, .kit-thumb {
         display: none;
     }
+
+    #competencies-list {
+        width: 210px;
+        margin-right: 0;
+    }
+
+    .softwares-list, #technologies-list{
+        margin-left: 50px;
+        width: calc(100% - 260px);
+    }
+
+    #work-experience {
+        width: 46%;
+        margin-right: 4%;
+    }
+
+    #education {
+        width: 46%;
+    }
+
+    #testimonials {
+        padding: 60px 30px;
+    }
+}
+
+@media only screen and (max-width: 805px) {
+
+    .about-me-container {
+        padding-top: 30px;
+    }
+
+    .profile-picture {
+        display: block;
+        float: none;
+        margin: 0 auto 30px auto;
+        text-align: center;
+    }
+
+    .ildiko-picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    #intro-description {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    #technologies-list {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        min-height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .middle-card {
+        margin: 0 0 20px 0;
+    }
+
+    .footer-nav {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-menu-item {
+        margin: 0 15px;
+    }
+
+    .copyright {
+        display: inline-block;
+        position: initial;
+    }
+
+}
+
+@media only screen and (max-width: 510px) {
+
+    .basic-description, .daily-description {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .competencies-item, .time-interval, .experience-description {
+        font-size: 16px;
+    }
+
+    .footer-menu-item, .copyright {
+        font-size: 14px;
+    }
+
+    #intro-main-title {
+        line-height: 31px;
+    }
+
+    .softwares-list {
+        width: 70%;
+        text-align: center;
+    }
+
+    #competencies-list {
+        text-align: center;
+        width: 100%;
+    }
+
+    #technologies-list {
+        text-align: center;
+    }
+
+    #work-experience {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    #education {
+        width: 100%;
+    }
+
+    #testimonials-title {
+        text-align: center;
+        width: 70%;
+        line-height: 31px;
+        margin: 0 auto 40px auto;
+    }
+
+    .copyright {
+        position: absolute;
+        text-align: center;
+        bottom: -50px;
+        left: 50%;
+        margin-left: -53px;
+    }
+
+    .social-media-container {
+        bottom: 60px;
+        display: block;
+        text-align: center;
+        float: none;
+    }
+
+    .social-button {
+        background-size: 500px;
+        margin-right: 15px;
+    }
+
+    #twitter-btn {
+        background-position: 6px 5px;
+    }
+
+    #behance-social-btn {
+        background-position: -77px 5px;
+    }
+
+    #linked-in-btn {
+        background-position: -160px 3px;
+    }
+
+    #github-btn {
+        background-position: -240px 5px;
+    }
+
+    #dribbble-btn {
+        background-position: -320px 5px;
+    }
+
+    #facebook-btn {
+        background-position: -396px 6px;
+    }
+
+    #instagram-btn {
+        background-position: -471px 5px;
+    }
+
 }

@@ -25,6 +25,7 @@ class PageController {
     public routes() {
         this.router.get( "/", this.index );
         this.router.get( "/daily-ui", this.dailyUI );
+        this.router.get( "/about-me", this.aboutMe );
     }
 
 
@@ -45,6 +46,10 @@ class PageController {
 
     }
 
+
+    public aboutMe(req: Request, res: Response, next: NextFunction) {
+        res.render( "about-me", { title: "ildiesign | About Me" } );
+    }
 
 
     private static calculateUIDay(): number {

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="261px" viewBox="0 0 11 261" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>timline-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About-Me-Hover-Invision" transform="translate(-239.000000, -773.000000)" fill-rule="nonzero">
+            <g id="Group-7" transform="translate(163.000000, 445.000000)">
+                <g id="Group-2" transform="translate(76.000000, 284.000000)">
+                    <g id="timline-icon" transform="translate(0.000000, 44.000000)">
+                        <path d="M5.5,6 L5.5,260.5" id="Path-3" stroke="#EEEEEE" stroke-width="2"></path>
+                        <circle id="Oval" fill="#DDDDDD" cx="5.5" cy="5.5" r="5.5"></circle>
+                        <circle id="Oval-Copy" fill="#DDDDDD" cx="5.5" cy="88.8333333" r="5.5"></circle>
+                        <circle id="Oval-Copy-2" fill="#DDDDDD" cx="5.5" cy="172.166667" r="5.5"></circle>
+                        <circle id="Oval-Copy-3" fill="#DDDDDD" cx="5.5" cy="255.5" r="5.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
