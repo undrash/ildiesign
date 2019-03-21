@@ -45,9 +45,7 @@ pipeline {
 
         stage('SHH Auth') {
 			steps {
-				script {
-                    method_remote_deploy()
-                }
+				echo 'SHH deploy here'
             }
         }
     }
