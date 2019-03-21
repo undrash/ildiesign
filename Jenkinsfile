@@ -10,6 +10,20 @@ pipeline {
 
     stages {
 
+		stage('Install Dependencies') {
+            steps {
+                sh 'npm install'
+            }
+
+        }
+
+		stage('Build Project') {
+            steps {
+                sh 'npm run build'
+            }
+
+        }
+
         stage('Build Docker Images') {
             steps {
                 sh './jenkins/build/build.sh'

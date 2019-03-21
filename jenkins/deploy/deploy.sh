@@ -6,5 +6,5 @@ echo "***********************************************"
 echo "********* Deploying on Remote Host ************"
 echo "***********************************************"
 
-docker stack deploy --compose-file docker-cloud.yml boardme
+docker stack deploy --compose-file docker-cloud.yml ildiesign 
 
