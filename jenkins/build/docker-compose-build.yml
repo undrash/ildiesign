@@ -1,0 +1,23 @@
+version: "3.1"
+
+services:
+        nginx-read:
+                image: "nginx-read:latest"
+                build:
+                        context: ../../nginx-read/
+
+        nginx-write:
+                image: "nginx-write:latest"
+                build:
+                        context: ../../nginx-write/
+
+        node-read:
+                image: "node-read:latest"
+                build:
+                        context: ../../node-read-sv/
+
+        node-write:
+                image: "node-write:latest"
+                build:
+                        context: ../../node-write-sv/
+

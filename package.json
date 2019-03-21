@@ -1,13 +1,16 @@
 {
-  "name": "scrumbs-website",
-  "description": "Scrumbs website",
+  "name": "ildiesign",
+  "description": "ildiesign website",
   "version": "1.0.0",
-  "repository": "https://github.com/gasparandr/scrumbs-website.git",
-  "license": "Planeeet.com",
+  "repository": "https://github.com/gasparandr/ildiesign.git",
+  "license": "Proprietary",
+  "private": true,
   "scripts": {
     "start": "tsc && gulp && node ./build/Index.js",
     "ts": "tsc -w",
-    "server": "nodemon ./build/Index.js"
+    "server": "nodemon ./build/Index.js",
+    "launch": "node ./build/Index.js",
+    "build": "tsc && gulp"
   },
   "devDependencies": {
     "@types/dotenv": "^6.1.0",

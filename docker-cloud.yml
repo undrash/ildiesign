@@ -1,0 +1,16 @@
+version: "3.1"
+
+services:
+
+  nginx:
+    container_name: nginx
+    image: gasparandr/ildiesign-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - website
+
+  website:
+    container_name: website
+    image: gasparandr/ildiesign-node

@@ -1,0 +1,11 @@
+./nginx
+./jenkins
+node_modules
+./src
+docker-cloud.yml
+Dockerfile
+gulpfile.js 
+Jenkinsfile
+tsconfig.json
+.idea
+.vscode
