@@ -69,7 +69,7 @@ def method_remote_deploy() {
 		
 		stage('Deploy to cluster') {
 		    // sshCommand remote: remote, command: "docker login -u gasparandr -p \"${PASS}\""
-            echo "${PASS}" | docker login -u gasparandr --password-stdin
+            sshCommand remote: remote, command: "echo \"${PASS}\" | docker login -u gasparandr --password-stdin"
 		    sshPut remote: remote, from: 'docker-cloud.yml', into: '.'
 		    sshScript remote: remote, script: "jenkins/deploy/deploy.sh"
 		}
