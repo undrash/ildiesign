@@ -26,6 +26,7 @@ class ProjectsController {
         this.router.get( "/ahead", this.ahead );
         this.router.get( "/borneo", this.borneo );
         this.router.get( "/plant-care", this.plantCare );
+        this.router.get( "/ventana", this.ventana );
     }
 
 
@@ -52,6 +53,13 @@ class ProjectsController {
 
     }
 
+
+
+    public ventana(req: Request, res: Response, next: NextFunction) {
+
+        res.render( "ventana", { title: "ildiesign | Ventana", isProject: true, project: "ventana" } );
+
+    }
 
 }
 

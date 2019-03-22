@@ -1,8 +1,8 @@
 /*Content*/
-/*1 Main website */
-/*2 Home page*/
-/*3 Daily UI*/
-/*4 About Me*/
+    /*1 Main website */
+    /*2 Home page*/
+    /*3 Daily UI*/
+    /*4 About Me*/
 
 
 
@@ -73,6 +73,7 @@
 
 .menu-item-container {
     display: inline-block;
+    margin-left: -42px;
 }
 
 .ildiesign-nav-logo {
@@ -221,9 +222,86 @@ footer {
 
 #ildiesign-gallery {
     background-color: #F9F9F9;
-    min-height: 600px;
-    height: calc(100vh - 126px);
+    overflow: auto;
 
+}
+
+.gallery-wrapper {
+    background-color: #F9F9F9;overflow: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.gallery-container {
+    max-width: 1220px;
+    text-align: center;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.gallery-wrapper img {
+    max-width: 100%;
+}
+
+#welcome-description {
+    margin: 23px auto 0 auto;
+    max-width: 600px;
+}
+
+.full-thumbnail {
+    width: 49%;
+    height: auto;
+    /*background-color: grey;*/
+    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.scale {
+    transition: all ease-in-out 0.2s;
+}
+
+.scale:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 2px 21px 0 rgba(36,46,76,0.22);
+}
+
+/*.half-thumbnail {*/
+    /*display: inline-block;*/
+    /*width: 48%;*/
+    /*height: 290px;*/
+/*}*/
+
+#scrumbs-landing {
+    float: left;
+    margin-right: 20px;
+}
+
+#scrumbs-landing-small {
+    display: none;
+
+}
+
+#ahead-cover {
+    margin-left: 20px;
+}
+
+#borneo-cover {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#scrumbs-app {
+    margin-left: 20px;
+}
+
+#scrumbs-app-small {
+    display: none;
+}
+
+#plantcare-cover {
+    margin-bottom: 20px;
 }
 
 /*3 DAILY UI -----------------------------------------------------------------------------*/
@@ -424,7 +502,7 @@ footer {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-    cursor: pointer;
+    /*cursor: pointer;*/
     transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -575,7 +653,7 @@ footer {
     font-size: 14px;
     padding-left: 15px;
     line-height: 21px;
-}
+ }
 
 .experience-item {
     position: relative;
@@ -787,6 +865,35 @@ footer {
         display: inline-block;
         position: initial;
     }
+
+    #scrumbs-landing {
+        display: none;
+    }
+
+    #scrumbs-landing-small {
+        display: block;
+    }
+
+    #scrumbs-app {
+        display: none;
+    }
+
+    #scrumbs-app-small {
+        display: block;
+    }
+
+    .full-thumbnail {
+        width: 100%;
+    }
+
+    #ahead-cover {
+        margin-left: 0;
+    }
+
+    #borneo-cover {
+        margin-left: 0;
+    }
+
 
 }
 

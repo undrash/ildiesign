@@ -3,8 +3,8 @@
 #main-nav{width:100%;text-align:center;background-color:white;height:76px;-webkit-box-shadow:0 2px 10px 0 rgba(36,46,76,0.1);-moz-box-shadow:0 2px 10px 0 rgba(36,46,76,0.1);box-shadow:0 2px 10px 0 rgba(36,46,76,0.1);position:relative;z-index:2}
 .main-title{font-size:24px}.subtitle{font-size:14px;font-weight:700;opacity:.5;text-transform:uppercase}
 .basic-description{font-size:14px;font-weight:400;line-height:27px}.secondary-description{font-size:14px;line-height:21px;margin-bottom:36px}
-.bold{font-weight:700}.menu-item-container{display:inline-block}.ildiesign-nav-logo{float:left;margin-left:30px;margin-top:27px}
-.menu-item{line-height:76px;margin:0 20px 0 20px;transition:opacity .2s ease-in-out;font-weight:700;font-size:14px}
+.bold{font-weight:700}.menu-item-container{display:inline-block;margin-left:-42px}
+.ildiesign-nav-logo{float:left;margin-left:30px;margin-top:27px}.menu-item{line-height:76px;margin:0 20px 0 20px;transition:opacity .2s ease-in-out;font-weight:700;font-size:14px}
 .menu-item:hover{opacity:1}.email-button{width:40px;height:40px;border-radius:20px;border:#eee solid 1px;float:right;background:url("../public/images/email-icon.svg") white center no-repeat;margin-right:30px;margin-top:18px;cursor:pointer}
 footer{height:auto;background-color:#fff;clear:both;padding:0 20px 0 30px;line-height:50px;position:relative}
 .footer-nav{display:inline-block}.footer-menu-item{font-size:12px;margin-right:30px;cursor:pointer;transition:opacity .5s ease-in-out;font-weight:700}
@@ -17,8 +17,14 @@ footer{height:auto;background-color:#fff;clear:both;padding:0 20px 0 30px;line-h
 #dribbble-btn{background-position:-198px 9px}#dribbble-btn:hover{background-position:-198px -33px}
 #facebook-btn{background-position:-246px 9px}#facebook-btn:hover{background-position:-246px -33px}
 #instagram-btn{background-position:-294px 9px}#instagram-btn:hover{background-position:-294px -33px}
-#ildiesign-gallery{background-color:#f9f9f9;min-height:600px;height:calc(100vh - 126px)}
-#daily-ui-container{width:100%;background-color:#f9f9f9;height:auto;clear:both;position:relative}
+#ildiesign-gallery{background-color:#f9f9f9;overflow:auto}.gallery-wrapper{background-color:#f9f9f9;overflow:auto;text-align:center;padding-top:60px}
+.gallery-container{max-width:1220px;text-align:center;margin:auto;padding:60px 20px}
+.gallery-wrapper img{max-width:100%}#welcome-description{margin:23px auto 0 auto;max-width:600px}
+.full-thumbnail{width:49%;height:auto;display:inline-block;float:left;margin-bottom:20px}
+.scale{transition:all ease-in-out .2s}.scale:hover{cursor:pointer;transform:scale(1.02);box-shadow:0 2px 21px 0 rgba(36,46,76,0.22)}
+#scrumbs-landing{float:left;margin-right:20px}#scrumbs-landing-small{display:none}
+#ahead-cover{margin-left:20px}#borneo-cover{margin-top:20px;margin-left:20px}#scrumbs-app{margin-left:20px}
+#scrumbs-app-small{display:none}#plantcare-cover{margin-bottom:20px}#daily-ui-container{width:100%;background-color:#f9f9f9;height:auto;clear:both;position:relative}
 .content-container{max-width:1070px;text-align:center;margin:auto}.daily-ui-count{position:absolute;width:95px;height:100px;background-color:white;right:30px;top:0;border-radius:0 0 5px 5px}
 .daily-description{max-width:600px;font-size:14px;font-weight:400;line-height:25px;margin:0 auto 30px auto;padding:0 30px}
 .count-title{opacity:.5;margin-top:25px;margin-bottom:5px}.count-number{font-size:30px;font-weight:900}
@@ -34,7 +40,7 @@ footer{height:auto;background-color:#fff;clear:both;padding:0 20px 0 30px;line-h
 .bottom-skillset{clear:both;overflow:hidden}.skills-left-wrapper{float:left;width:40%;margin-right:20px}
 .skills-right-wrapper{float:left;width:55%}.skills-title{font-size:16px;font-weight:700;margin-bottom:20px}
 .indent{margin-left:16px}#competencies-list{margin-bottom:30px}.competencies-item{margin-bottom:15px;font-size:14px}
-.skills-container{clear:both}.softwares-list{margin-bottom:30px}.soft-type{width:40px;height:40px;border-radius:20px;border:#eee solid 1px;background:url(../public/images/software-spritesheet.svg) no-repeat;display:inline-block;margin:0 15px 15px 0;text-indent:100%;white-space:nowrap;overflow:hidden;cursor:pointer;transition:box-shadow .3s ease-in-out}
+.skills-container{clear:both}.softwares-list{margin-bottom:30px}.soft-type{width:40px;height:40px;border-radius:20px;border:#eee solid 1px;background:url(../public/images/software-spritesheet.svg) no-repeat;display:inline-block;margin:0 15px 15px 0;text-indent:100%;white-space:nowrap;overflow:hidden;transition:box-shadow .3s ease-in-out}
 .soft-type:hover,.soft-type-large:hover{box-shadow:0 2px 15px 0 rgba(36,46,76,0.15)}
 .skillset-container{position:relative}.soft-type-large{width:70px;height:70px;border-radius:40px}
 .sketch-tooltip-container{position:relative;display:inline-block}.tooltip{position:absolute;background:#000;border-radius:.4em;width:240px;padding:35px 30px;color:white;text-align:center;font-size:14px;line-height:23px;z-index:99}
@@ -68,7 +74,9 @@ footer{height:auto;background-color:#fff;clear:both;padding:0 20px 0 30px;line-h
 .ildiko-picture{width:150px;height:150px}#intro-description{float:none;display:block;width:100%;text-align:center;padding:0}
 #technologies-list{width:100%;margin-left:0}.testimonial-card{width:100%;min-height:200px;margin-bottom:20px}
 .middle-card{margin:0 0 20px 0}.footer-nav{display:block;text-align:center}.footer-menu-item{margin:0 15px}
-.copyright{display:inline-block;position:initial}}@media only screen and (max-width:510px){.basic-description,.daily-description{font-size:16px;line-height:28px}
+.copyright{display:inline-block;position:initial}#scrumbs-landing{display:none}#scrumbs-landing-small{display:block}
+#scrumbs-app{display:none}#scrumbs-app-small{display:block}.full-thumbnail{width:100%}
+#ahead-cover{margin-left:0}#borneo-cover{margin-left:0}}@media only screen and (max-width:510px){.basic-description,.daily-description{font-size:16px;line-height:28px}
 .competencies-item,.time-interval,.experience-description{font-size:16px}.footer-menu-item,.copyright{font-size:14px}
 #intro-main-title{line-height:31px}.softwares-list{width:70%;text-align:center}#competencies-list{text-align:center;width:100%}
 #technologies-list{text-align:center}#work-experience{width:100%;margin-bottom:40px}

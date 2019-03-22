@@ -41,6 +41,7 @@
     left: -70px;
     position: fixed;
     transition: left ease-in-out 0.2s, opacity ease-in-out 0.2s;
+
 }
 
 .previous:hover {
@@ -61,37 +62,37 @@
 
 
 .ahead-presentation {
-    background: url("../public/project-images/Borneo-1236px-2880px.png") no-repeat top center;
+    background: url("../public/project-images/Ventana-1236px-2880px.png") no-repeat top center;
     width: 100%;
-    height: 7458px;
+    height: 9986px;
 }
 
 
 
 @media only screen and (max-width: 1230px) {
     .ahead-presentation {
-        background: url("../public/project-images/Borneo-1024px-1230px.png") no-repeat top center;
-        height: 7564px;
+        background: url("../public/project-images/Ventana-1024px-1230px.png") no-repeat top center;
+        height: 8440px;
     }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 900px) {
     .ahead-presentation {
-        background: url("../public/project-images/Borneo-860px.png") no-repeat top center;
-        height: 7264px;
+        background: url("../public/project-images/Ventana-860px.png") no-repeat top center;
+        height: 5541px;
     }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 680px) {
     .ahead-presentation {
-        background: url("../public/project-images/Borneo-670px.png") no-repeat top center;
-        height: 7524px;
+        background: url("../public/project-images/Ventana-480.png") no-repeat top center;
+        height: 4557px;
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 440px) {
     .ahead-presentation {
-        background: url("../public/project-images/Borneo-420px.png") no-repeat top center;
-        height: 6997px;
+        background: url("../public/project-images/Ventana-440 .png") no-repeat top center;
+        height: 4557px;
     }
 }

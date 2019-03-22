@@ -23,8 +23,6 @@
     position: fixed;
     transition: right ease-in-out 0.2s, opacity ease-in-out 0.2s;
     opacity: 0.2;
-
-
 }
 
 .next:hover {
@@ -41,7 +39,6 @@
     left: -70px;
     position: fixed;
     transition: left ease-in-out 0.2s, opacity ease-in-out 0.2s;
-
 }
 
 .previous:hover {
@@ -60,14 +57,11 @@
     margin-top: 38px;
 }
 
-
 .ahead-presentation {
     background: url("../public/project-images/PlantCare-1229px-2880px.png") no-repeat top center;
     width: 100%;
     height: 7241px;
 }
-
-
 
 @media only screen and (max-width: 1230px) {
     .ahead-presentation {

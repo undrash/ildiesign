@@ -7,7 +7,7 @@ const counter = document.getElementById( "count-number" );
 
 const limit = parseInt( counter.innerHTML );
 
-let day = 727;
+let day = limit - 30;
 
 counter.innerHTML = "0";
 
