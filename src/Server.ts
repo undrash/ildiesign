@@ -39,7 +39,13 @@ class Server {
 
     public config() {
 
-        this.app.engine( "hbs", hbs( { extname: "hbs", defaultLayout: "layout", layoutsDir: __dirname + "/../views/layouts" } ) );
+        this.app.engine( "hbs", hbs({
+            extname: "hbs",
+            defaultLayout: "layout",
+            layoutsDir: __dirname + "/../views/layouts",
+            partialsDir: __dirname + "/../views/partials"
+        }));
+
         this.app.set( "view engine", "hbs" );
 
         this.app.use( "*/public", express.static( publicPath ) );

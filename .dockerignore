@@ -12,3 +12,4 @@ tsconfig.json
 .dockerignore
 .git
 .gitignore
+.travis.yml
