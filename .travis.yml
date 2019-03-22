@@ -6,8 +6,11 @@ node_js:
 cache:
   directories:
   - node_modules
+before_install:
+  - npm install pm2 -g
 install:
   - npm install
 script:
-  - npm start
+  - pm2 start ./build/Index.js
   - npm run test
+  - pm2 stop Index.js
