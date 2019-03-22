@@ -14,4 +14,4 @@ script:
   - npm run build
   - pm2 start ./build/Index.js
   - npm run test
-  - pm2 stop Index.js
+  - pm2 stop Index
