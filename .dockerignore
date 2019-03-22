@@ -9,3 +9,6 @@ Jenkinsfile
 tsconfig.json
 .idea
 .vscode
+.dockerignore
+.git
+.gitignore

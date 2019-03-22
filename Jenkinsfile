@@ -45,7 +45,9 @@ pipeline {
 
         stage('SHH Auth') {
 			steps {
-				echo 'SHH deploy here'
+                script {
+                    method_remote_deploy()
+                }
             }
         }
     }
@@ -54,7 +56,7 @@ pipeline {
 
 def method_remote_deploy() {
 	withCredentials([
-		sshUserPrivateKey(credentialsId: 'boardme_api_cluster_auth', usernameVariable: 'USER', keyFileVariable: 'KEYFILE')
+		sshUserPrivateKey(credentialsId: 'ildiesign_andrei', usernameVariable: 'USER', keyFileVariable: 'KEYFILE')
 	]) {
 	
 		def remote = [:]
