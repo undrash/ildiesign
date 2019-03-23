@@ -1,0 +1,17 @@
+
+sudo: false
+language: node_js
+node_js:
+  - '10'
+cache:
+  directories:
+  - node_modules
+before_install:
+  - npm install pm2 -g
+install:
+  - npm install
+script:
+  - npm run build
+  - pm2 start ./build/Index.js
+  - npm run test
+  - pm2 stop Index
