@@ -11,7 +11,8 @@
     "server": "nodemon ./build/Index.js",
     "launch": "node ./build/Index.js",
     "build": "tsc && gulp",
-    "test": "jest"
+    "test": "jest",
+    "b": "gulp"
   },
   "devDependencies": {
     "@types/dotenv": "^6.1.0",

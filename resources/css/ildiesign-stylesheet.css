@@ -12,6 +12,7 @@
 
 * {font-family: 'Muli', sans-serif;
     color: #242E4C;
+
 }
 
 ::selection {
@@ -246,6 +247,7 @@ footer {
 #welcome-description {
     margin: 23px auto 0 auto;
     max-width: 600px;
+    padding: 0 20px;
 }
 
 .full-thumbnail {
@@ -897,7 +899,8 @@ footer {
 
 }
 
-@media only screen and (max-width: 510px) {
+/*@media only screen and (max-width: 510px) {*/
+    @media only screen and (max-width: 560px) {
 
     .basic-description, .daily-description {
         font-size: 16px;
@@ -970,28 +973,62 @@ footer {
         background-position: 6px 5px;
     }
 
+    #twitter-btn:hover {
+        background-position: 6px -61px;
+    }
+
+
     #behance-social-btn {
         background-position: -77px 5px;
+    }
+
+    #behance-social-btn:hover {
+        background-position: -77px -61px;
     }
 
     #linked-in-btn {
         background-position: -160px 3px;
     }
 
+    #linked-in-btn:hover {
+        background-position: -160px -63px;
+    }
+
     #github-btn {
         background-position: -240px 5px;
+    }
+
+    #github-btn:hover {
+        background-position: -240px -61px;
     }
 
     #dribbble-btn {
         background-position: -320px 5px;
     }
 
+    #dribbble-btn:hover {
+        background-position: -320px -61px;
+    }
+
     #facebook-btn {
         background-position: -396px 6px;
     }
 
+    #facebook-btn:hover {
+        background-position: -396px -60px;
+    }
+
     #instagram-btn {
         background-position: -471px 5px;
+    }
+
+    #instagram-btn:hover {
+        background-position: -471px -61px;
+    }
+
+    .menu-item-container {
+        display: inline-block;
+        margin-left: 0;
     }
 
 }
