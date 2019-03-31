@@ -19,7 +19,7 @@ footer{height:auto;background-color:#fff;clear:both;padding:0 20px 0 30px;line-h
 #instagram-btn{background-position:-294px 9px}#instagram-btn:hover{background-position:-294px -33px}
 #ildiesign-gallery{background-color:#f9f9f9;overflow:auto}.gallery-wrapper{background-color:#f9f9f9;overflow:auto;text-align:center;padding-top:60px}
 .gallery-container{max-width:1220px;text-align:center;margin:auto;padding:60px 20px}
-.gallery-wrapper img{max-width:100%}#welcome-description{margin:23px auto 0 auto;max-width:600px}
+.gallery-wrapper img{max-width:100%}#welcome-description{margin:23px auto 0 auto;max-width:600px;padding:0 20px}
 .full-thumbnail{width:49%;height:auto;display:inline-block;float:left;margin-bottom:20px}
 .scale{transition:all ease-in-out .2s}.scale:hover{cursor:pointer;transform:scale(1.02);box-shadow:0 2px 21px 0 rgba(36,46,76,0.22)}
 #scrumbs-landing{float:left;margin-right:20px}#scrumbs-landing-small{display:none}
@@ -76,14 +76,18 @@ footer{height:auto;background-color:#fff;clear:both;padding:0 20px 0 30px;line-h
 .middle-card{margin:0 0 20px 0}.footer-nav{display:block;text-align:center}.footer-menu-item{margin:0 15px}
 .copyright{display:inline-block;position:initial}#scrumbs-landing{display:none}#scrumbs-landing-small{display:block}
 #scrumbs-app{display:none}#scrumbs-app-small{display:block}.full-thumbnail{width:100%}
-#ahead-cover{margin-left:0}#borneo-cover{margin-left:0}}@media only screen and (max-width:510px){.basic-description,.daily-description{font-size:16px;line-height:28px}
+#ahead-cover{margin-left:0}#borneo-cover{margin-left:0}}@media only screen and (max-width:560px){.basic-description,.daily-description{font-size:16px;line-height:28px}
 .competencies-item,.time-interval,.experience-description{font-size:16px}.footer-menu-item,.copyright{font-size:14px}
 #intro-main-title{line-height:31px}.softwares-list{width:70%;text-align:center}#competencies-list{text-align:center;width:100%}
 #technologies-list{text-align:center}#work-experience{width:100%;margin-bottom:40px}
 #education{width:100%}#testimonials-title{text-align:center;width:70%;line-height:31px;margin:0 auto 40px auto}
 .copyright{position:absolute;text-align:center;bottom:-50px;left:50%;margin-left:-53px}
 .social-media-container{bottom:60px;display:block;text-align:center;float:none}.social-button{background-size:500px;margin-right:15px}
-#twitter-btn{background-position:6px 5px}#behance-social-btn{background-position:-77px 5px}
-#linked-in-btn{background-position:-160px 3px}#github-btn{background-position:-240px 5px}
-#dribbble-btn{background-position:-320px 5px}#facebook-btn{background-position:-396px 6px}
-#instagram-btn{background-position:-471px 5px}}
+#twitter-btn{background-position:6px 5px}#twitter-btn:hover{background-position:6px -61px}
+#behance-social-btn{background-position:-77px 5px}#behance-social-btn:hover{background-position:-77px -61px}
+#linked-in-btn{background-position:-160px 3px}#linked-in-btn:hover{background-position:-160px -63px}
+#github-btn{background-position:-240px 5px}#github-btn:hover{background-position:-240px -61px}
+#dribbble-btn{background-position:-320px 5px}#dribbble-btn:hover{background-position:-320px -61px}
+#facebook-btn{background-position:-396px 6px}#facebook-btn:hover{background-position:-396px -60px}
+#instagram-btn{background-position:-471px 5px}#instagram-btn:hover{background-position:-471px -61px}
+.menu-item-container{display:inline-block;margin-left:0}}
