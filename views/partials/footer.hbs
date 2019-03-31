@@ -5,9 +5,9 @@
 <footer>
 
     <nav id="footer-nav" class="footer-nav">
-        <a href="/" class="footer-menu-item active-btn">Projects</a>
-        <a href="/daily-ui" class="footer-menu-item inactive-btn">Daily UI</a>
-        <a href="/about-me" class="footer-menu-item inactive-btn">About Me</a>
+        <a href="/" class="footer-menu-item {{#if projects}} active-btn {{else}} inactive-btn {{/if}}">Projects</a>
+        <a href="/daily-ui" class="footer-menu-item {{#if dailyUI}} active-btn {{else}} inactive-btn {{/if}}">Daily UI</a>
+        <a href="/about-me" class="footer-menu-item {{#if aboutMe}} active-btn {{else}} inactive-btn {{/if}}">About Me</a>
         <a class="footer-menu-item inactive-btn">Cookies?</a>
     </nav>
 

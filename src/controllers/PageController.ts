@@ -32,7 +32,7 @@ class PageController {
 
     public index(req: Request, res: Response, next: NextFunction) {
 
-        res.render( "index", { title: "ildiesign | Home" } );
+        res.render( "index", { title: "ildiesign | Home", projects: true } );
 
     }
 
@@ -42,13 +42,13 @@ class PageController {
 
         const day = PageController.calculateUIDay();
 
-        res.render( "daily-ui", { title: "ildiesign | Daily UI", day } );
+        res.render( "daily-ui", { title: "ildiesign | Daily UI", day, dailyUI: true } );
 
     }
 
 
     public aboutMe(req: Request, res: Response, next: NextFunction) {
-        res.render( "about-me", { title: "ildiesign | About Me" } );
+        res.render( "about-me", { title: "ildiesign | About Me", aboutMe: true } );
     }
 
 
