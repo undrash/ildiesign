@@ -23,8 +23,6 @@
     position: fixed;
     transition: right ease-in-out 0.2s, opacity ease-in-out 0.2s;
     opacity: 0.2;
-
-
 }
 
 .next:hover {
@@ -36,6 +34,7 @@
     background-position-x: 25px;
     background-position-y: 38px;
 }
+
 
 .previous {
     left: -70px;
@@ -61,38 +60,31 @@
 }
 
 
-.ahead-presentation {
-    background: url("../public/project-images/Ventana-1236px-2880px.png") no-repeat top center;
+.scrumbs-landing-presentation {
+    background: url("../public/project-images/Scrumbs-Landing-1229px-2880px.png") no-repeat top center;
     width: 100%;
-    height: 10021px;
+    height: 7998px;
 }
 
 
 
 @media only screen and (max-width: 1230px) {
-    .ahead-presentation {
-        background: url("../public/project-images/Ventana-1024px-1230px.png") no-repeat top center;
-        height: 8440px;
+    .scrumbs-landing-presentation {
+        background: url("../public/project-images/Scrumbs-Landing-1024px-1230px.png") no-repeat top center;
+        height: 6012px;
     }
 }
 
-@media only screen and (max-width: 900px) {
-    .ahead-presentation {
-        background: url("../public/project-images/Ventana-860px.png") no-repeat top center;
-        height: 7784px;
+@media only screen and (max-width: 860px) {
+    .scrumbs-landing-presentation {
+        background: url("../public/project-images/Scrumbs-Landing-860px.png") no-repeat top center;
+        height: 5098px;
     }
 }
 
-@media only screen and (max-width: 680px) {
-    .ahead-presentation {
-        background: url("../public/project-images/Ventana-480.png") no-repeat top center;
-        height: 7922px;
-    }
-}
-
-@media only screen and (max-width: 440px) {
-    .ahead-presentation {
-        background: url("../public/project-images/Ventana-320.png") no-repeat top center;
-        height: 8094px;
+@media only screen and (max-width: 519px) {
+    .scrumbs-landing-presentation {
+        background: url("../public/project-images/Scrumbs-Landing-520px.png") no-repeat top center;
+        height: 3266px;
     }
 }
