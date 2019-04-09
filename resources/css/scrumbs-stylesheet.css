@@ -63,7 +63,7 @@
 .scrumbs-presentation {
     background: url("../public/project-images/Scrumbs-1229px-2880px.png") no-repeat top center;
     width: 100%;
-    height: 8074px;
+    height: 7054px;
 }
 
 
@@ -71,20 +71,20 @@
 @media only screen and (max-width: 1230px) {
     .scrumbs-presentation {
         background: url("../public/project-images/Scrumbs-1024px-1230px.png") no-repeat top center;
-        height: 7318px;
+        height: 6468px;
     }
 }
 
 @media only screen and (max-width: 860px) {
     .scrumbs-presentation {
         background: url("../public/project-images/Scrumbs-860px.png") no-repeat top center;
-        height: 6745px;
+        height: 6084px;
     }
 }
 
 @media only screen and (max-width: 519px) {
     .scrumbs-presentation {
         background: url("../public/project-images/Scrumbs - 520px.png") no-repeat top center;
-        height: 6561px;
+        height: 6010px;
     }
 }
