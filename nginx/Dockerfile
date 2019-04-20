@@ -1,8 +1,10 @@
 # Base image
 FROM nginx
 
-# Copy config
+# Copy configs
 COPY nginx.conf /etc/nginx/nginx.conf
+COPY default.conf /etc/nginx/conf.d/default.conf
+COPY website.conf /etc/nginx/conf.d/website.conf
 
 # Expose ports
 EXPOSE 80

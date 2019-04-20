@@ -10,6 +10,13 @@ services:
       - "443:443"
     depends_on:
       - website
+    volumes:
+      - /docker-volumes/dh-param/dhparam-2048.pem:/etc/ssl/certs/dhparam-2048.pem
+      - /docker-volumes/etc/letsencrypt/live/ildiesign.com/fullchain.pem:/etc/letsencrypt/live/ildiesign.com/fullchain.pem
+      - /docker-volumes/etc/letsencrypt/live/ildiesign.com/privkey.pem:/etc/letsencrypt/live/ildiesign.com/privkey.pem
+      #for certbot challenges
+      - /docker-volumes/data/letsencrypt:/data/letsencrypt
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
 
   website:
     container_name: website
