@@ -77,7 +77,7 @@
 
 @media only screen and (max-width: 860px) {
     .ahead-presentation {
-        background: url("../public/project-images/Ahead - 860px.png") no-repeat top center;
+        background: url("../public/project-images/Ahead-860px.png") no-repeat top center;
         height: 6178px;
     }
 
@@ -104,7 +104,7 @@
 
 @media only screen and (max-width: 519px) {
     .ahead-presentation {
-        background: url("../public/project-images/Ahead - 519px.png") no-repeat top center;
+        background: url("../public/project-images/Ahead-519px.png") no-repeat top center;
         height: 5344px;
     }
 }
