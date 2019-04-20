@@ -80,6 +80,26 @@
         background: url("../public/project-images/Scrumbs-Landing-860px.png") no-repeat top center;
         height: 5098px;
     }
+
+    .next {
+        right: -70px;
+        opacity: 0.2;
+        background-image: url(../public/images/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position-x: 12px;
+        background-position-y: 43px;
+    }
+
+    .previous {
+        left: -70px;
+        opacity: .2;
+        background-image: url(../public/images/arrow-left.svg);
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position-x: 78px;
+        background-position-y: 43px;
+    }
 }
 
 @media only screen and (max-width: 519px) {
