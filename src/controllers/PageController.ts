@@ -26,6 +26,7 @@ class PageController {
         this.router.get( "/", this.index );
         this.router.get( "/daily-ui", this.dailyUI );
         this.router.get( "/about-me", this.aboutMe );
+        this.router.get( "/cookies", this.cookies );
     }
 
 
@@ -47,9 +48,17 @@ class PageController {
     }
 
 
+
     public aboutMe(req: Request, res: Response, next: NextFunction) {
         res.render( "about-me", { title: "ildiesign | About Me", aboutMe: true } );
     }
+
+
+
+    public cookies(req: Request, res: Response, next: NextFunction) {
+        res.render( "cookies", { title: "ildiesign | Cookies" } );
+    }
+
 
 
     private static calculateUIDay(): number {
