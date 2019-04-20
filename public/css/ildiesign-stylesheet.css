@@ -68,7 +68,7 @@ footer{height:auto;background-color:#fff;clear:both;padding:0 20px 0 30px;line-h
 .all-cookies-wrapper{max-width:750px;margin:auto;padding:60px 20px}.cookies-header{width:100%;height:auto;margin-bottom:25px;overflow:auto}
 .cookies-header .main-title{text-align:center}#disable-cookies{float:none;display:block;margin:20px auto 0;width:176px}
 .cookies-card{padding:25px;border-radius:5px;background-color:white;clear:both;margin-bottom:10px}
-.cookie-banner{width:100%;background-color:#263237;padding:5px 20px;position:fixed;bottom:0;z-index:3;box-sizing:border-box}
+.cookie-banner{width:100%;background-color:#263237;padding:5px 20px;position:fixed;bottom:0;z-index:3;box-sizing:border-box;display:none}
 .cookie-message{color:white;font-size:14px;font-weight:normal;display:inline-block;margin-right:30px;float:left;line-height:30px}
 .cookie-link{color:white;text-decoration:underline}.secondary-btn{padding:8px 20px;color:#263237;background-color:white;border-radius:3px;display:inline-block;float:right;border:1px solid #263237;cursor:pointer}
 @media only screen and (max-width:450px){#main-nav{padding-top:30px;padding-bottom:20px}
