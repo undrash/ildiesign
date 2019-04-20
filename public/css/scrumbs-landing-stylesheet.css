@@ -7,5 +7,7 @@
 .arrow-left{width:15px;margin-left:20px;margin-top:38px}.scrumbs-landing-presentation{background:url("../public/project-images/Scrumbs-Landing-1229px-2880px.png") no-repeat top center;width:100%;height:7998px}
 @media only screen and (max-width:1230px){.scrumbs-landing-presentation{background:url("../public/project-images/Scrumbs-Landing-1024px-1230px.png") no-repeat top center;height:6012px}
 }@media only screen and (max-width:860px){.scrumbs-landing-presentation{background:url("../public/project-images/Scrumbs-Landing-860px.png") no-repeat top center;height:5098px}
+.next{right:-70px;opacity:.2;background-image:url(../public/images/arrow-right.svg);background-repeat:no-repeat;background-size:10px;background-position-x:12px;background-position-y:43px}
+.previous{left:-70px;opacity:.2;background-image:url(../public/images/arrow-left.svg);background-repeat:no-repeat;background-size:10px;background-position-x:78px;background-position-y:43px}
 }@media only screen and (max-width:519px){.scrumbs-landing-presentation{background:url("../public/project-images/Scrumbs-Landing-520px.png") no-repeat top center;height:3266px}
 }

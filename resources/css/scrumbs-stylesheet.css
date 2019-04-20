@@ -71,20 +71,40 @@
 @media only screen and (max-width: 1230px) {
     .scrumbs-presentation {
         background: url("../public/project-images/Scrumbs-1024px-1230px.png") no-repeat top center;
-        height: 6468px;
+        height: 6318px;
     }
 }
 
 @media only screen and (max-width: 860px) {
     .scrumbs-presentation {
         background: url("../public/project-images/Scrumbs-860px.png") no-repeat top center;
-        height: 6084px;
+        height: 5968px;
+    }
+
+    .next {
+        right: -70px;
+        opacity: 0.2;
+        background-image: url(../public/images/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position-x: 12px;
+        background-position-y: 43px;
+    }
+
+    .previous {
+        left: -70px;
+        opacity: .2;
+        background-image: url(../public/images/arrow-left.svg);
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position-x: 78px;
+        background-position-y: 43px;
     }
 }
 
 @media only screen and (max-width: 519px) {
     .scrumbs-presentation {
         background: url("../public/project-images/Scrumbs - 520px.png") no-repeat top center;
-        height: 6010px;
+        height: 5924px;
     }
 }

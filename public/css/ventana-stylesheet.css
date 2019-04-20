@@ -7,6 +7,8 @@
 .arrow-left{width:15px;margin-left:20px;margin-top:38px}.ahead-presentation{background:url("../public/project-images/Ventana-1236px-2880px.png") no-repeat top center;width:100%;height:10021px}
 @media only screen and (max-width:1230px){.ahead-presentation{background:url("../public/project-images/Ventana-1024px-1230px.png") no-repeat top center;height:8440px}
 }@media only screen and (max-width:900px){.ahead-presentation{background:url("../public/project-images/Ventana-860px.png") no-repeat top center;height:7784px}
+.next{right:-70px;opacity:.2;background-image:url(../public/images/arrow-right.svg);background-repeat:no-repeat;background-size:10px;background-position-x:12px;background-position-y:43px}
+.previous{left:-70px;opacity:.2;background-image:url(../public/images/arrow-left.svg);background-repeat:no-repeat;background-size:10px;background-position-x:78px;background-position-y:43px}
 }@media only screen and (max-width:680px){.ahead-presentation{background:url("../public/project-images/Ventana-480.png") no-repeat top center;height:7922px}
 }@media only screen and (max-width:440px){.ahead-presentation{background:url("../public/project-images/Ventana-320.png") no-repeat top center;height:8094px}
 }
