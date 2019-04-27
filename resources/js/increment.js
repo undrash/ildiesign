@@ -1,17 +1,19 @@
 
 
 
+const extraDays     = 1;
+
+const counter       = document.getElementById( "count-number" );
+
+const limit         = parseInt( counter.innerHTML ) + extraDays;
+
+let day             = limit - 30;
+
+counter.innerHTML   = "0";
+
+const pause         = 50;
 
 
-const counter = document.getElementById( "count-number" );
-
-const limit = parseInt( counter.innerHTML );
-
-let day = limit - 30;
-
-counter.innerHTML = "0";
-
-const pause = 50;
 
 const interval = setInterval( function () {
 
