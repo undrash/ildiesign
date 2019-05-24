@@ -866,6 +866,9 @@ footer {
 }
 
 
+#awards {
+    margin-top: 40px;
+}
 
 
 @media only screen and (max-width: 450px) {
@@ -962,11 +965,14 @@ footer {
 
     #education {
         width: 46%;
+        /*margin-bottom: 40px;*/
     }
 
     #testimonials {
         padding: 60px 30px;
     }
+
+
 }
 
 @media only screen and (max-width: 805px) {
