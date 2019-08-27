@@ -1,12 +1,8 @@
 version: "3.1"
 
 services:
-        nginx:
-                image: "ildiesign-nginx:latest"
-                build:
-                        context: ../../nginx/
 
-        website:
+        ildiesign:
                 image: "ildiesign-node:latest"
                 build:
                         context: ../../
