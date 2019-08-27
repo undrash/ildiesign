@@ -26,6 +26,8 @@ pipeline {
 
         stage('Build Docker Images') {
             steps {
+                sh 'sed -i -e \'s/\\r\$//\' jenkins/build/build.sh'
+                sh 'chmod +x jenkins/build/build.sh'
                 sh './jenkins/build/build.sh'
             }
 
@@ -33,13 +35,9 @@ pipeline {
 
         stage('Push Docker Images') {
             steps {
+                sh 'sed -i -e \'s/\\r\$//\' jenkins/push/push.sh'
+                sh 'chmod +x jenkins/push/push.sh'
                 sh './jenkins/push/push.sh'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                echo 'Fake testing...'
             }
         }
 
@@ -65,12 +63,17 @@ def method_remote_deploy() {
 		remote.name = "${HOST_NAME}"
 		remote.allowAnyHosts = true
 		remote.identityFile = "${KEYFILE}"
+
 		
-		
-		stage('Deploy to cluster') {
-            sshCommand remote: remote, command: "echo \"${PASS}\" | docker login -u gasparandr --password-stdin"
-		    sshPut remote: remote, from: 'docker-cloud.yml', into: '.'
-		    sshScript remote: remote, script: "jenkins/deploy/deploy.sh"
+		stage('Inject config') {
+		    sshPut remote: remote, from: 'jenkins/config/ildiesign.conf', into: '.'
+		    sshScript remote: remote, script: "jenkins/config/config.sh"
 		}
+
+
+        stage('Deploy to cluster') {
+            sshCommand remote: remote, command: "echo \"${PASS}\" | docker login -u gasparandr --password-stdin"
+            sshScript remote: remote, script: "jenkins/deploy/deploy.sh"
+        }
 	}
 }
