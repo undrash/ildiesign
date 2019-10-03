@@ -9,6 +9,8 @@ echo "********* Deploying on Remote Host ************"
 echo "***********************************************"
 echo
 
+docker service rm ildiesign
+
 docker service create \
   --name ildiesign \
   --replicas 1 \
