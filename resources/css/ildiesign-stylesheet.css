@@ -870,6 +870,13 @@ footer {
     margin-top: 40px;
 }
 
+/*PRODUCT HUNT*/
+
+.product-hunt-btn {
+    position: fixed;
+    right: 20px; top: 90px;
+}
+
 
 @media only screen and (max-width: 450px) {
     #main-nav {
@@ -928,6 +935,13 @@ footer {
 @media only screen and (max-width: 704px){
     .notifications-thumb, .kit-thumb, .statistics-thumb, .plantcare-thumb {
         display: none;
+    }
+
+    .product-hunt-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        top: initial;
     }
 }
 
