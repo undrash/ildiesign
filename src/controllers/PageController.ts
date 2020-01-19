@@ -27,6 +27,7 @@ class PageController {
         this.router.get( "/daily-ui", this.dailyUI );
         this.router.get( "/about-me", this.aboutMe );
         this.router.get( "/cookies", this.cookies );
+        this.router.get( "/themes", this.themes );
     }
 
 
@@ -57,6 +58,12 @@ class PageController {
 
     public cookies(req: Request, res: Response, next: NextFunction) {
         res.render( "cookies", { title: "ildiesign | Cookies" } );
+    }
+
+
+
+    public themes(req: Request, res: Response, next: NextFunction) {
+        res.render( "themes", { title: "ildiesign | Themes", themes: true } );
     }
 
 

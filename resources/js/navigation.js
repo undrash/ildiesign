@@ -1,6 +1,9 @@
 
 window.onload = () => {
 
+
+    /** Email/Contact  */
+
     const emailBtn        = document.getElementById( "contact-email-btn" );
     const copyEmailBtn    = document.getElementById( "copy-email-btn" );
     const emailAddress    = document.getElementById( "contact-email-address" );
@@ -26,7 +29,29 @@ window.onload = () => {
     });
 
 
+    /** Mobile Menu */
 
+
+    const menuBtn       = document.getElementById( "mobile-menu-btn" );
+    const menuDropdown  = document.getElementById( "mobile-menu-dropdown" );
+    const closeMenuBtn  = document.getElementById( "mobile-menu-close-btn" );
+
+
+
+    menuBtn.addEventListener( "click", () => {
+        menuDropdown.style.display = "block";
+        closeMenuBtn.style.display = "block";
+    });
+
+    closeMenuBtn.addEventListener( "click", () => {
+        closeMenuBtn.style.display = "none";
+        menuDropdown.style.display = "none";
+    });
+
+
+
+
+    /** Utils */
     
     function copyToClipboard(str) {
         let el = document.createElement('textarea');

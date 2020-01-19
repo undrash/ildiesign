@@ -1,11 +1,14 @@
 *{font-family:'Muli',sans-serif;color:#242e4c}::selection{background:#000;color:white}
 ::-moz-selection{background:#000;color:white}.active-btn{opacity:1}.inactive-btn{opacity:.5}
-#main-nav{width:100%;text-align:center;background-color:white;height:76px;-webkit-box-shadow:0 2px 10px 0 rgba(36,46,76,0.1);-moz-box-shadow:0 2px 10px 0 rgba(36,46,76,0.1);box-shadow:0 2px 10px 0 rgba(36,46,76,0.1);position:relative;z-index:2}
+#main-nav{width:100%;text-align:center;background-color:white;min-height:76px;-webkit-box-shadow:0 2px 10px 0 rgba(36,46,76,0.1);-moz-box-shadow:0 2px 10px 0 rgba(36,46,76,0.1);box-shadow:0 2px 10px 0 rgba(36,46,76,0.1);position:relative;z-index:2}
 .main-title{font-size:24px}.subtitle{font-size:14px;font-weight:700;opacity:.5;text-transform:uppercase}
 .basic-description{font-size:14px;font-weight:400;line-height:27px}.secondary-description{font-size:14px;line-height:21px;margin-bottom:36px}
 .bold{font-weight:700}.menu-item-container{display:inline-block;margin-left:-130px}
 .ildiesign-nav-logo{float:left;margin-left:30px;margin-top:27px}.menu-item{line-height:76px;margin:0 20px 0 20px;transition:opacity .2s ease-in-out;font-weight:700;font-size:14px}
-.menu-item:hover{opacity:1}#contact-email-container{float:right;right:30px;top:18px;position:absolute;overflow:hidden}
+.menu-item:hover{opacity:1}.rounded-btn{height:40px;width:40px;border:#eee solid 1px;border-radius:40px;background-size:15px 15px}
+#mobile-menu-btn{background:white url("../public/images/menu-icon.svg") no-repeat 13px 13px;position:absolute;top:15px;left:15px;cursor:pointer;display:none}
+#mobile-menu-close-btn{background:white url("../public/images/close-icon.svg") no-repeat 13px 13px;position:absolute;top:15px;left:15px;cursor:pointer;display:none}
+#mobile-menu-dropdown{display:none}#contact-email-container{float:right;right:30px;top:18px;position:absolute;overflow:hidden}
 #contact-email-btn{height:40px;width:40px;border:#eee solid 1px;border-radius:40px;float:right;background:white url("../public/images/email-icon.svg") no-repeat 13px 13px;background-size:15px 15px;cursor:pointer;transition:width .5s ease-in;position:relative}
 #contact-email-btn:hover{width:243px}#copy-email-btn{height:40px;width:63px;border-radius:18px;background-color:#fff;box-shadow:0 2px 5px 0 rgba(36,46,76,0.16);position:absolute;right:1px;top:0;border:0;cursor:pointer;opacity:0;transition:opacity .25s ease;transition-timing-function:cubic-bezier(0.25,-0.55,0.25,1);transition-delay:.3s;outline:0;pointer-events:none;font-weight:bold}
 #copy-email-btn.visible{opacity:1;pointer-events:auto}#contact-email-address{margin:9px 0 0 40px;width:100px;height:25px;background:white url("../public/images/email.svg") no-repeat center;background-size:100px 25px;opacity:0;transition:opacity .2s ease;transition-delay:0s}
@@ -30,7 +33,7 @@ footer{height:auto;background-color:#fff;clear:both;padding:0 20px 0 30px;line-h
 #ahead-cover{margin-left:20px}#borneo-cover{margin-top:20px;margin-left:20px}#scrumbs-app{margin-left:20px}
 #scrumbs-app-small{display:none}#plantcare-cover{margin-bottom:20px}#daily-ui-container{width:100%;background-color:#f9f9f9;height:auto;clear:both;position:relative}
 .content-container{max-width:1070px;text-align:center;margin:auto}.daily-ui-count{position:absolute;width:95px;height:100px;background-color:white;right:30px;top:0;border-radius:0 0 5px 5px}
-.daily-description{max-width:600px;font-size:14px;font-weight:400;line-height:25px;margin:0 auto 30px auto;padding:0 30px}
+.description{max-width:600px;font-size:16px;font-weight:400;line-height:25px;margin:0 auto 30px auto;padding:0 30px}
 .count-title{opacity:.5;margin-top:25px;margin-bottom:5px}.count-number{font-size:30px;font-weight:900}
 .daily-ui-header{padding-top:70px;padding-bottom:60px}.daily-ui-title{margin-bottom:25px}
 .blue-button{padding:15px 0;background-color:#235bf6;border-radius:30px;color:white;display:block;width:215px;margin:auto;transition:box-shadow .2s ease-in-out,background-color .2s ease-in-out;cursor:pointer}
@@ -71,13 +74,22 @@ footer{height:auto;background-color:#fff;clear:both;padding:0 20px 0 30px;line-h
 .cookie-banner{width:100%;background-color:#263237;padding:5px 20px;position:fixed;bottom:0;z-index:3;box-sizing:border-box;display:none}
 .cookie-message{color:white;font-size:14px;font-weight:normal;display:inline-block;margin-right:30px;float:left;line-height:30px}
 .cookie-link{color:white;text-decoration:underline}.secondary-btn{padding:8px 20px;color:#263237;background-color:white;border-radius:3px;display:inline-block;float:right;border:1px solid #263237;cursor:pointer}
-#awards{margin-top:40px}.product-hunt-btn{position:fixed;right:20px;top:90px}@media only screen and (max-width:450px){#main-nav{padding-top:30px;padding-bottom:20px}
-.ildiesign-nav-logo{display:block;float:none;margin:0 auto}.menu-item-container{display:block}
-}@media only screen and (max-width:510px){#email-btn-container{position:fixed;bottom:20px;right:20px;margin:0;z-index:1}
+#awards{margin-top:40px}.product-hunt-btn{position:fixed;right:20px;top:90px}.themes-container{background-color:#f9f9f9;padding:0 20px}
+.themes-container .description{margin:0 auto}.themes-container .gallery-container{padding:40px 0}
+.themes-header{padding-top:40px;text-align:center}.themesberg-logo{height:45px;margin-bottom:20px}
+.theme-preview-wrapper{min-height:315px;vertical-align:top;width:27%;border-radius:5px;background-color:#fff;display:inline-block;padding:15px;transition:all .3s ease-in-out;cursor:pointer;margin:0 1% 20px}
+.theme-preview-wrapper:hover{box-shadow:0 2px 21px 0 rgba(36,46,76,0.22)}.theme-preview{width:100%;position:relative}
+.theme-preview-img{width:100%;border-radius:3px}.theme-details{padding:15px 0 0}.theme-title{font-size:18px;width:calc(100% - 65px);display:inline-block;text-align:left;vertical-align:top;line-height:28px}
+.theme-price{display:inline-block;text-align:right;font-size:25px;width:60px}.theme-info{opacity:.7;text-align:left;font-size:16px;margin-top:10px}
+@media only screen and (max-width:450px){}@media only screen and (max-width:510px){#email-btn-container{position:fixed;bottom:20px;right:20px;margin:0;z-index:1}
 .email-button{width:70px;height:70px;border-radius:40px;box-shadow:0 2px 10px 0 rgba(36,46,76,0.1);background-size:22px}
 .daily-ui-count{right:0;left:0;margin:auto}.daily-ui-header{padding-top:130px}.guide-thumb{display:none}
-.white-overlay{height:250px}}@media only screen and (max-width:704px){.notifications-thumb,.kit-thumb,.statistics-thumb,.plantcare-thumb{display:none}
-.product-hunt-btn{position:fixed;right:20px;bottom:20px;top:initial}}@media only screen and (max-width:900px){#ildiesign-intro{padding:0 30px}
+.white-overlay{height:250px}}@media only screen and (max-width:660px){.ildiesign-nav-logo{display:block;float:none;margin:30px auto 0}
+.menu-item{display:block;line-height:60px}.ildiesign-nav-logo{margin-top:0;padding-top:27px}
+#mobile-menu-btn{display:block}#menu-item-container{display:none}.menu-item-container{margin-left:0;display:block;padding:40px 0}
+}@media only screen and (max-width:704px){.notifications-thumb,.kit-thumb,.statistics-thumb,.plantcare-thumb{display:none}
+.product-hunt-btn{position:fixed;right:20px;bottom:20px;top:initial}}@media only screen and (max-width:900px){.theme-preview-wrapper{width:41%}
+.theme-title{font-size:18px;line-height:24px}}@media only screen and (max-width:900px){#ildiesign-intro{padding:0 30px}
 .skills-container{padding:35px 30px}}@media only screen and (max-width:1058px){.notifications-thumb,.kit-thumb{display:none}
 #competencies-list{width:210px;margin-right:0}.softwares-list,#technologies-list{margin-left:50px;width:calc(100% - 260px)}
 #work-experience{width:46%;margin-right:4%}#education{width:46%}#testimonials{padding:60px 30px}
@@ -85,9 +97,9 @@ footer{height:auto;background-color:#fff;clear:both;padding:0 20px 0 30px;line-h
 .ildiko-picture{width:150px;height:150px}#intro-description{float:none;display:block;width:100%;text-align:center;padding:0}
 #technologies-list{width:100%;margin-left:0}.testimonial-card{width:100%;min-height:200px;margin-bottom:20px}
 .middle-card{margin:0 0 20px 0}.footer-nav{display:block;text-align:center}.footer-menu-item{margin:0 15px}
-.copyright{display:inline-block;position:initial}#scrumbs-landing{display:none}#scrumbs-landing-small{display:block}
-#scrumbs-app{display:none}#scrumbs-app-small{display:block}.full-thumbnail{width:100%}
-#ahead-cover{margin-left:0}#borneo-cover{margin-left:0}}@media only screen and (max-width:560px){.basic-description,.daily-description{font-size:16px;line-height:28px}
+.copyright{display:inline-block;position:initial}#scrumbs-landing{display:none}#scrumbs-landing-small{display:block;margin:auto}
+#scrumbs-app{display:none}#scrumbs-app-small{display:block;margin:auto}.full-thumbnail{width:100%}
+#ahead-cover{margin-left:0}#borneo-cover{margin-left:0}}@media only screen and (max-width:560px){.basic-description,.description{font-size:16px;line-height:28px}
 .competencies-item,.time-interval,.experience-description{font-size:16px}.footer-menu-item,.copyright{font-size:14px}
 #intro-main-title{line-height:31px}.softwares-list{width:70%;text-align:center}#competencies-list{text-align:center;width:100%}
 #technologies-list{text-align:center}#work-experience{width:100%;margin-bottom:40px}
@@ -103,4 +115,4 @@ footer{height:auto;background-color:#fff;clear:both;padding:0 20px 0 30px;line-h
 #instagram-btn{background-position:-471px 5px}#instagram-btn:hover{background-position:-471px -61px}
 .menu-item-container{display:inline-block;margin-left:0}.cookie-message{display:block;float:none;margin-right:0;text-align:center}
 .secondary-btn{float:none;display:block;width:45px;text-align:center;margin:15px auto 10px}
-}
+}@media only screen and (max-width:650px){.theme-preview-wrapper{width:90%}}
