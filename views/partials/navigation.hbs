@@ -6,16 +6,25 @@
         <img id="ildiesign-logo" class="ildiesign-nav-logo" src="../public/images/ildiesign-logo.svg" alt="ildiesign home">
     </a>
 
-    <div class="menu-item-container">
-        <a id="menu-item-projects" class="menu-item {{#if projects}} active-btn {{else}} inactive-btn {{/if}}" href="/">Projects</a>
-        <a id="menu-item-daily-ui" class="menu-item {{#if dailyUI}} active-btn {{else}} inactive-btn {{/if}}" href="/daily-ui">Daily UI</a>
-        <a id="menu-item-about-me" class="menu-item {{#if aboutMe}} active-btn {{else}} inactive-btn {{/if}}" href="/about-me">About Me</a>
+
+    <div id="menu-item-container" class="menu-item-container">
+        <a class="menu-item {{#if projects}} active-btn {{else}} inactive-btn {{/if}}" href="/">Projects</a>
+        <a class="menu-item {{#if dailyUI}} active-btn {{else}} inactive-btn {{/if}}" href="/daily-ui">Daily UI</a>
+        <a class="menu-item {{#if themes}} active-btn {{else}} inactive-btn {{/if}}" href="/themes">Themes</a>
+        <a class="menu-item {{#if aboutMe}} active-btn {{else}} inactive-btn {{/if}}" href="/about-me">About Me</a>
+    </div>
+
+    <div id="mobile-menu-dropdown" class="menu-item-container">
+        <a class="menu-item {{#if projects}} active-btn {{else}} inactive-btn {{/if}}" href="/">Projects</a>
+        <a class="menu-item {{#if dailyUI}} active-btn {{else}} inactive-btn {{/if}}" href="/daily-ui">Daily UI</a>
+        <a class="menu-item {{#if themes}} active-btn {{else}} inactive-btn {{/if}}" href="/themes">Themes</a>
+        <a class="menu-item {{#if aboutMe}} active-btn {{else}} inactive-btn {{/if}}" href="/about-me">About Me</a>
     </div>
 
 
     <div id="contact-email-container">
 
-        <div id="contact-email-btn">
+        <div id="contact-email-btn" class="rounded-btn">
 
             <div id="contact-email-address"></div>
 
@@ -23,4 +32,10 @@
         </div>
 
     </div>
+
+    <div id="mobile-menu-btn" class="rounded-btn"></div>
+
+    <div id="mobile-menu-close-btn" class="rounded-btn"></div>
+
 </nav>
+
